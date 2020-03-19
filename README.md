@@ -1,2 +1,2 @@
-# Common
- Utilities used by go apps
+# Utility
+Common packages used by go apps
