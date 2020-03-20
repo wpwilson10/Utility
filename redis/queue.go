@@ -2,7 +2,7 @@ package redis
 
 import (
 	"github.com/go-redis/redis/v7"
-	"github.com/wpwilson10/newscrawler/internal/setup"
+	"github.com/wpwilson10/utility/setup"
 )
 
 // Queue implements a Redis list as a queue where name is the list key

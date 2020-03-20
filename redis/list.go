@@ -2,7 +2,7 @@ package redis
 
 import (
 	"github.com/go-redis/redis/v7"
-	"github.com/wpwilson10/newscrawler/internal/setup"
+	"github.com/wpwilson10/utility/setup"
 )
 
 // CappedList implements a Redis list with a max number of elements.
