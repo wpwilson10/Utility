@@ -1,3 +1,8 @@
+/*
+	Package redis creates data structures that interact with 
+	a redis database.
+*/
+
 package redis
 
 import (

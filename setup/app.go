@@ -1,3 +1,7 @@
+/*
+	Package setup contains common tools for wpwilson10 applications.
+*/
+
 package setup
 
 // ApplicationName is the currently running program
