@@ -8,13 +8,19 @@ import (
 )
 
 // Logger configures the logrus package used by whole program.
-func Logger() {
+func Logger(file *os.File) {
 	// Default format
 	log.SetFormatter(&log.TextFormatter{})
-	// Output logs to stdout
-	log.SetOutput(os.Stdout)
 	// Only log the warning severity or above.
 	log.SetLevel(log.InfoLevel)
+
+	// use file if given, otherwise print to std out
+	if file != nil {
+		log.SetOutput(file)
+	} else {
+		// Output logs to stdout
+		log.SetOutput(os.Stdout)
+	}
 }
 
 // LogCommon returns a logger containing the optional error, application, and function name of the caller.
